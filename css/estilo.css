@@ -153,19 +153,7 @@ img{
 	width: 15%;
 }
 
-.btn-primary{
-	animation: flutuar 1s infinite alternate;
-	width: 120px;
-	height: 40px;
-}
-
-.btn-primary:hover{
-	width: 130px;
-	height: 50px;
-}
 
 img:hover{
 	width: 20%;
 }
-
-
