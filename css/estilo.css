@@ -136,7 +136,17 @@ border:5px solid green;
 	background-size: cover;
 }
 
+.btn-primary{
+	width: auto;
+}
 
+img{
+	width: 15%;
+}
+
+img:hover{
+	width: 20%;
+}
 
 
 @media (max-width: 400px){
@@ -148,10 +158,21 @@ border:5px solid green;
 	background-size: cover;
 }
 
+#caixa1,#caixa2,#caixa3,#caixa4{
+	background-position: center;
+}
+
 
 img{
 	width: 15%;
 }
+.btn-primary{
+	width: auto;
+}
+.btn-primary h4{
+	font-size: 1.2em;
+}
+
 
 
 img:hover{
