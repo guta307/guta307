@@ -10,8 +10,36 @@ position:relative;
 margin:0;
 }
 
+@-webkit-keyframes flutuar{
+	from{transform: translateY(0px);}
+	to{transform: translateY(-15px);}
+}
 
-#caixa1,#caixa2,#caixa3,#caixa4,#caixa5{
+@keyframes flutuar{
+	from{transform: translateY(0px);}
+	to{transform: translateY(-15px);}
+}
+
+img{
+	cursor: pointer;
+	position:fixed;
+	z-index: 1;
+	width: 5%;
+	border-radius: 50px;
+	transition: 1s all;
+	right: 20px;
+	top:5%;
+	animation: flutuar 1s infinite alternate;
+}
+
+
+img:hover{
+	width: 6%;
+}
+
+
+
+#caixa1,#caixa2,#caixa3,#caixa4{
 	margin: 0px auto;
 	position:relative;
 	width: 100%;
@@ -37,48 +65,41 @@ margin:0;
 	background-size: cover;
 }
 
-#caixa5{
-	text-align: center;
-	color:#4169E1;
-}
-#rede1{
-	text-align: center;
-	float:right;
-	position: relative;
-	width: 50%;
-	height: 100%;
-	background-color: #282828;
+
+#competenciaMotal .modal-body{
+	line-height: 20%;
 }
 
-#rede2{
+#contato .modal-body{
 	text-align: center;
-	width: 50%;
-	position: relative;
-	height: 100%;
-	background-color: white;
 }
 
-#github{
-	margin-top: 40%;
+#github,#linkdin,#wpp{
+	margin: 20px;
 	border-radius:70px;
-	height: 120px;
-	width: 120px;
+	height: 100px;
+	width: 100px;
+	min-width:90px;
+	min-height:90px;
 	background-image: url('images/github.png');
 	background-size:cover;
 }
 
+
+#github{
+	background-image: url('images/github.png');
+	background-size:cover;
+}
 #linkdin{
-	margin-top: 40%;
-	border-radius:70px;
-	height: 120px;
-	width: 120px;
-	min-width:90px;
-	min-height:90px;
 	background-image: url('images/linkdin.png');
 	background-size:cover;
 }
+#wpp{
+	background-image: url('images/wpp.png');
+	background-size:cover;
+}
 
-#github:hover, #linkdin:hover{
+#wpp:hover, #github:hover, #linkdin:hover{
 border:5px solid green;
 }
 
@@ -97,8 +118,17 @@ border:5px solid green;
 	width: 200px;
 }
 
+.btn-primary{
+	animation: flutuar 1s infinite alternate;
+}
+
+.btn-primary:hover{
+	width: 220px;
+	height: 70px;
+}
+
 @media (max-width: 720px){
-	#caixa1,#caixa2,#caixa3,#caixa4,#caixa5{
+	#caixa1,#caixa2,#caixa3,#caixa4{
 	margin: 0px auto;
 	position:relative;
 	width: 100%;
@@ -106,29 +136,11 @@ border:5px solid green;
 	background-size: cover;
 }
 
-#github{
-	border-radius:70px;
-	height: 120px;
-	width: 120px;
-	min-width: 50px;
-	min-height: 50px;
-	background-image: url('images/github.png');
-	background-size:cover;
-}
 
-#linkdin{
-	margin-top: 40%;
-	top:45%;
-	border-radius:70px;
-	min-width: 50px;
-	min-height: 50px;
-	background-image: url('images/linkdin.png');
-	background-size:cover;
-}
-}
+
 
 @media (max-width: 400px){
-	#caixa1,#caixa2,#caixa3,#caixa4,#caixa5{
+	#caixa1,#caixa2,#caixa3,#caixa4{
 	margin: 0px auto;
 	position:relative;
 	width: 100%;
@@ -136,26 +148,7 @@ border:5px solid green;
 	background-size: cover;
 }
 
-#github{
-	
-	border-radius:70px;
-	height: 50px;
-	width: 50px;
-	min-width: 20px;
-	min-height: 20px;
-	background-image: url('images/github.png');
-	background-size:cover;
-}
 
-#linkdin{
-	margin-top: 40%;
-	border-radius:70px;
-	height: 50px;
-	width: 50px;
-	min-width: 20px;
-	min-height: 20px;
-	background-image: url('images/linkdin.png');
-	background-size:cover;
-}
-}
+
+
 

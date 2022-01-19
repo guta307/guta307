@@ -17,6 +17,7 @@
 </head>
 <body>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <img src="./css/images/contato.png" data-toggle="modal" data-target="#contato">
 	<section id="caixa1">
 		<div class="centralizar">
 			<!-- Button trigger modal -->
@@ -39,7 +40,7 @@
         <h4>Nome:</h4> <h5>Gustavo Veiga São Leandro</h5>
         <h4>Idade:</h4>	<h5>20 anos</h5>
         <h4>Estado-civil:</h4> <h5>Solteiro</h5>
-        <h4>Mora em:</h4> <h5>R. Tibúrcio G. T. Monteiro,307 Vila Haro Sorocaba</h5>
+        <h4>Mora em:</h4> <h5>R. Tibúrcio G. T. Monteiro,307-Vila Haro, Sorocaba</h5>
         <h4>Contato:</h4> <h5>(15)99772-3050</h5>
       </div>
      
@@ -58,11 +59,11 @@
 </div>
 
 <!-- Modal -->
-<div class="modal fade" id="FormModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="FormModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Objetivos e Formação</h5>
+        <h5 class="modal-title" id="exampleModalLongTitle">Formação</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -75,6 +76,13 @@
 
         <h4>Conclusão:</h4> <h5>julho/2021</h5>
 
+        <hr>
+
+      <h4>Matriculado em: </h4>  <h5>Especialização em Ciência de Dados com Certificação Internacional Big Data</h5>
+
+      <h4>Inicio: </h4> <h5>Março 2022</h5>
+
+      <h4>Duração: </h4> <h5>24 meses</h5>
         <hr>
 
         <h4>Nível Médio</h4> <h5>Colégio Objetivo Sorocaba</h5>
@@ -112,10 +120,13 @@
         </button>
       </div>
       <div class="modal-body">
-	        <h5>-Capacidade de propor soluções criativas e inovadoras.<br> 
-	        	-Determinação e impulso para ações e resultados com estilo pessoal para se comunicar e interagir em equipe.<br>
-	 -Grande disposição para o trabalho.<br>
-	-conhecimento intermediário :Javascript, CSS e HTML, conhecimento básico MySQL.</h5>
+        <p>
+	        <h5>-Capacidade de propor soluções criativas e inovadoras.</h5>
+	        	<h5>-Determinação e impulso para ações e resultados com estilo pessoal para se comunicar e interagir em equipe.</h5>
+	 <h5>-Grande disposição para o trabalho.</h5>
+	<h5>-conhecimento intermediário :Javascript, CSS e HTML</h5>
+  <h5>-conhecimento básico MySQL.</h5>
+</p>
       </div>
      
     </div>
@@ -142,16 +153,16 @@
         </button>
       </div>
       <div class="modal-body">
-	        <h5>-1 ano servindo as Forças Armadas do Brasil.<br> 
+	        <h5>-1 ano servindo as Forças Armadas do Brasil.<br> </h5>
 	        	<hr>
-	        	-Projetos interdisciplinares de desenvolvimento de software.<br>
+	        	<h5>-Projetos interdisciplinares de desenvolvimento de software.<br></h5>
 	        	<hr>
-				-Trabalhando atualmente como Técnico de informática em empresa de TI, atendendo mais de 20 empresas<br>
-				*Infraestrutura de redes<br>
-				*Manutenção de computadores<br>
-				*Configuração de Dominio<br>
-				*Suporte<br>
-				Início: março-2021
+			<h5>	-Trabalhando atualmente como Técnico de informática em empresa de TI, atendendo mais de 20 empresas<br></h5>
+				<h5>*Infraestrutura de redes<br></h5>
+			<h5>	*Manutenção de computadores<br></h5>
+				<h5>*Configuração de Dominio<br></h5>
+				<h5>*Suporte</h5>
+				<h5>Início: março-2021</h5>
       </div>
      
     </div>
@@ -159,28 +170,24 @@
 </div>
 		</div>
 	</section>
-
-	<section id="caixa5">
-		<div id="rede1">
-
-			<div id="centralizar">
-				<h4>Me Encontre no<br>
-        Github</h4>
-
-			<button type='button' class="btn btn-light" id="github"  onclick="window.location.href='https://github.com/guta307/Projetos'"></button>
-			</div>
-
-		</div>
-
-		<div id="rede2">
-				<h4>Me Encontre no<br>
-        Linkdin</h4>
-          <div id="centralizar">
-			<button id="linkdin" class="btn btn-light" onclick="window.location.href='https://www.linkedin.com/in/gustavo-veiga-são-leandro-2763651b1/'"></button>
-		</div>
-		</div>
-	</section>
-
+  <div class="modal fade" id="contato" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Me procure agora nas minhas redes!</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <button id="linkdin" class="btn btn-light" onclick="window.location.href='https://www.linkedin.com/in/gustavo-veiga-são-leandro-2763651b1/'"></button>
+        <button type='button' class="btn btn-light" id="github"  onclick="window.location.href='https://github.com/guta307/Projetos'"></button>
+        <button type='button' class="btn btn-light" id="wpp"  onclick="window.location.href=' http://api.whatsapp.com/send?1=pt_BR&phone=5515997723050'"></button>
+      </div>
+      
+    </div>
+  </div>
+</div>
 </body>
 
 </html>
